@@ -28,7 +28,6 @@ For a detailed theoretical explanation of PyLRO and its application, see:
 
 ## 📁 Repository Structure
 
-- `1c00134/`: (Details TBD)
 - `2_4_6_msd_4ns/`: Contains MSD analysis scripts and results and dumb files.
 - `Active_learning_files/`: Data and scripts for active learning during MTP construction.
 - `MTP_construction/`: Training data, Testing Data for MTP and constructed MTP potential 
