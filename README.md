@@ -34,7 +34,6 @@ For installing and using MTP and its interface with LAMMPS, please refer to the 
 
 - 📘 [MTP Manual (MLIP 2)](https://gitlab.com/ashapeev/mlip-2-paper-supp-info/-/blob/master/manual.pdf)
 - ⚙️ [LAMMPS–MLIP Interface Setup](https://gitlab.com/ashapeev/interface-lammps-mlip-2/-/blob/master/README.md)
-
 For a detailed theoretical explanation of PyLRO and its application, see:  
 📄 [DOI: 10.1063/5.0244012](https://doi.org/10.1063/5.0244012)
 ---
