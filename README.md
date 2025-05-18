@@ -6,7 +6,7 @@ This repository contains **all data and analysis files** used in the research:
 
 **_“Exploration of Amorphous V₂O₅ as Cathode for Magnesium Batteries”_**  
 **Authors**: Vijay Choyal, Debsundar Dey, and Gopalakrishnan Sai Gautam  
-_(Manuscript currently under review. Link will be updated soon.)_
+_( Link will be updated soon.)_
 
 ---
 
