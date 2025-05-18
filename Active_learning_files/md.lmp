@@ -1,0 +1,76 @@
+variable        Tequil index 900.0
+variable        seed index 826626413
+variable etol equal 10e-25   #use var ${etol}
+variable ftol equal 10e-25
+variable maxiter equal 100
+variable maxeval equal 1000
+variable natoms equal "count(all)"
+variable TotE equal "c_speatom"
+variable Lx equal "lx"
+variable Ly equal "ly"
+variable Lz equal "lz"
+variable t equal time
+variable T equal temp
+variable p equal press
+variable PE equal pe
+variable KE equal ke
+variable E equal etotal
+###############################################
+
+units           metal
+atom_style	atomic
+boundary        p p p
+################################################
+read_data        input1.pos
+replicate 2 2 2
+
+mass 1 24.305
+mass 2 50.9415
+mass 3 15.9999
+
+group Mgatom type 1
+###############################################
+pair_style mlip mlip.ini 
+pair_coeff * *
+
+neighbor	0.5 bin
+neigh_modify    every 1 delay 5 check yes
+#################################################
+timestep	0.002
+
+fix		1 all nve
+fix		2 all langevin ${Tequil} ${Tequil} 0.2 ${seed} zero yes
+#fix 3 all nvt temp 600.0 600.0 0.2
+thermo_style    custom step temp 
+thermo 1000
+
+dump   1 all custom 1000 dump.nb id type x y z fx fy fz 
+
+run             25000
+unfix 1
+unfix 2
+undump 1
+
+log MSDfile.txt
+compute msdisp Mgatom msd com yes
+
+#################################################
+variable tt equal time
+variable mtt equal time-${tt}
+run 0
+##################################################
+
+fix 1m all nvt temp ${Tequil} ${Tequil} 0.2 
+thermo_style custom step v_mtt c_msdisp[1] c_msdisp[2] c_msdisp[3] c_msdisp[4] lx ly lz press pxx pyy pzz pe temp
+thermo 100
+#--------------------------------------------------#
+fix 9f all print 1 "${mtt} $(c_msdisp[1]) $(c_msdisp[2]) $(c_msdisp[3]) $(c_msdisp[4])" file msd.txt
+fix output1 all print 1 "$t $T $p ${KE} ${PE} $E" file output1.txt
+
+
+run 2500000
+#####################################################
+unfix 1m
+unfix 9f
+unfix output1
+#reset_timestep  0
