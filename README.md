@@ -17,6 +17,7 @@ This study combines:
 
 - **AIMD Melt-Quench Simulations**: To generate amorphous structures.
 - **Moment Tensor Potential (MTP)** construction: A machine-learning potential trained on AIMD data.
+- - **Voltage Calculation**: Effect of  **long-range order** in Voltage.
 - **Classical Molecular Dynamics (MD)** simulations: To investigate **dynamical properties**.
 - **PyLRO**: Used to **quantify long-range order (LRO)** in the amorphous systems.
 
