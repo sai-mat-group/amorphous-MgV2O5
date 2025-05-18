@@ -1,5 +1,4 @@
 
-Exploration of amorphous MgV2O5 as a cathode for Mg batteries
 # Exploration of Amorphous V₂O₅ as a Cathode for Magnesium Batteries
 
 This repository contains **all data and analysis files** used in the research:
