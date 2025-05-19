@@ -1,7 +1,7 @@
 
 # Exploration of Amorphous V₂O₅ as a Cathode for Magnesium Batteries
 
-This repository contains **all data and analysis files** used in the research article, **“Exploration of Amorphous V₂O₅ as Cathode for Magnesium Batteries”**  authored by Vijay Choyal, Debsundar Dey, and Gopalakrishnan Sai Gautam. The work is currently under review, but a preprint is available on [arXiv](https://arxiv.org). 
+This repository contains **all data and analysis files** used in the research article, **“Exploration of Amorphous V₂O₅ as Cathode for Magnesium Batteries”**  authored by Vijay Choyal, Debsundar Dey, and Gopalakrishnan Sai Gautam. The work is currently under review, but a preprint is available on [arXiv](http://arxiv.org/abs/2505.10967). 
 
 ---
 
@@ -41,7 +41,7 @@ For installing and using MTP and its interface with LAMMPS, please refer to the 
 
 ## 📬 Citation
 
-If you use any part of this dataset or constructed potential or scripts, please drop a citation to our work at [arXiv](https://arxiv.org). We will also update the DoI of the manuscript here once it is published.
+If you use any part of this dataset or constructed potential or scripts, please drop a citation to our work at [arXiv](http://arxiv.org/abs/2505.10967). We will also update the DoI of the manuscript here once it is published.
 
 ---
 
