@@ -25,6 +25,9 @@ This study combines:
 - `MTP_construction/`: Training and testing Data for MTP and the final optimised MTP potential. 
 - `pylro_calc/`: Files related to PyLRO calculations for LRO quantification.
 - `videos_and_Gifs/`: Visualizations of the structures and magneisum hopping behavior.
+- - **300K_corelated_Mg.mp4**: Shows Mg atoms hopping at 300 K, exhibiting concerted and correlated motion.  
+  - **1200K_random_Mg.mp4**: Depicts Mg atom movement at 1200 K, characterized by more random and less coordinated hopping.  
+  - **voronoi_1200K.mp4**: Illustrates atom hopping through polyhedral units, providing a Voronoi-based view of local environments at 1200 K.
 
 ---
 
